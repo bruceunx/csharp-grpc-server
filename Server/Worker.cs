@@ -33,7 +33,7 @@ public class Worker
         await Task.Run(
             () =>
             {
-                while (!cancellationTokenSource.Token.IsCancellationRequested)
+                while (!cancellationTokenSource.IsCancellationRequested)
                 {
                     if (Connect() && Read())
                     {
