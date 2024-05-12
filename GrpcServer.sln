@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{F1E15FBD-4621-4B26-BEB8-94ECAD5C2EBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snap7", "Snap7\Snap7.csproj", "{81BFCD44-543E-409A-931C-1692BCFAF076}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1E15FBD-4621-4B26-BEB8-94ECAD5C2EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1E15FBD-4621-4B26-BEB8-94ECAD5C2EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1E15FBD-4621-4B26-BEB8-94ECAD5C2EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1E15FBD-4621-4B26-BEB8-94ECAD5C2EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81BFCD44-543E-409A-931C-1692BCFAF076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81BFCD44-543E-409A-931C-1692BCFAF076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81BFCD44-543E-409A-931C-1692BCFAF076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81BFCD44-543E-409A-931C-1692BCFAF076}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
