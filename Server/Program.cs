@@ -1,14 +1,13 @@
 using Server;
-
-// using Server.Services;
+using Server.Services;
 
 class Program
 {
     static async Task Main(string[] args)
     {
-        var ws = new WebSocket("admin", "admin", "https://jsonplaceholder.typicode.com/posts");
-        ws.GetWsAddrAsync();
-        await Task.Delay(5000);
+        // var ws = new WebSocket("admin", "admin", "https://jsonplaceholder.typicode.com/posts");
+        // ws.GetWsAddrAsync();
+        // await Task.Delay(5000);
 
         // var entites = await db.GetAllAsync();
         // PrintEntities(entites);
@@ -37,22 +36,22 @@ class Program
         //
         // await Task.Delay(6000);
         //
-        // var builder = WebApplication.CreateBuilder(args);
-        //
-        // // Add services to the container.
-        // builder.Services.AddGrpc();
-        //
-        // var app = builder.Build();
-        //
-        // // Configure the HTTP request pipeline.
-        // app.MapGrpcService<GreeterService>();
-        // app.MapGet(
-        //     "/",
-        //     () =>
-        //         "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909"
-        // );
-        //
-        // app.Run();
+        var builder = WebApplication.CreateBuilder(args);
+
+        // Add services to the container.
+        builder.Services.AddGrpc();
+
+        var app = builder.Build();
+
+        // Configure the HTTP request pipeline.
+        app.MapGrpcService<GreeterService>();
+        app.MapGet(
+            "/",
+            () =>
+                "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909"
+        );
+
+        app.Run();
         //
         // worker.Stop();
         // await task;
