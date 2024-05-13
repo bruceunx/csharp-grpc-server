@@ -11,7 +11,7 @@ public struct Entity
     public override string ToString() => $"Id: {Id}, Name: {Name}, Age: {Age}";
 }
 
-class DataBase
+public class DataBase
 {
     private readonly string _connectionString =
         "server=152.136.50.204;user=root;password=123321;database=test";

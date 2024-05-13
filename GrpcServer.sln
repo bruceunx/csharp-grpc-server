@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snap7", "Snap7\Snap7.csproj", "{81BFCD44-543E-409A-931C-1692BCFAF076}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerTest", "ServerTest\ServerTest.csproj", "{24F42B10-A334-4DF8-B584-DC2AD2D22371}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{81BFCD44-543E-409A-931C-1692BCFAF076}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81BFCD44-543E-409A-931C-1692BCFAF076}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81BFCD44-543E-409A-931C-1692BCFAF076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24F42B10-A334-4DF8-B584-DC2AD2D22371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24F42B10-A334-4DF8-B584-DC2AD2D22371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24F42B10-A334-4DF8-B584-DC2AD2D22371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24F42B10-A334-4DF8-B584-DC2AD2D22371}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
