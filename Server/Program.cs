@@ -1,3 +1,4 @@
+using System.Net;
 using Server;
 using Server.Services;
 
@@ -37,6 +38,10 @@ class Program
         // await Task.Delay(6000);
         //
         var builder = WebApplication.CreateBuilder(args);
+        builder.WebHost.ConfigureKestrel(options =>
+        {
+            options.Listen(IPAddress.Loopback, 7007);
+        });
 
         // Add services to the container.
         builder.Services.AddGrpc();
