@@ -5,12 +5,20 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        var worker = new NewsTask("hello");
+        var db = new DataBase();
+        var entites = await db.GetAllAsync();
 
+        PrintEntities(entites);
+        await db.InsertAsync("BruceLi", 27);
+        entites = await db.GetAllAsync();
+        PrintEntities(entites);
+
+        var worker = new NewsTask("hello");
         Console.WriteLine("start worker");
         var task = worker.Start();
 
         Console.WriteLine("now is worker");
+
         for (int i = 1; i <= 10; i++)
         {
             Console.WriteLine("in loop");
@@ -44,5 +52,13 @@ class Program
 
         worker.Stop();
         await task;
+    }
+
+    public static void PrintEntities(List<Entity> entities)
+    {
+        foreach (var entity in entities)
+        {
+            Console.WriteLine(entity);
+        }
     }
 }

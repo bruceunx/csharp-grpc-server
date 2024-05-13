@@ -9,6 +9,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.57.0"></PackageReference>
+    <PackageReference Include="MySqlConnector" Version="2.3.7"></PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Snap7\Snap7.csproj"></ProjectReference>
